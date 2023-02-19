@@ -1,12 +1,14 @@
 import React from 'react'
+import App from '../App';
 
-const Pagination = ({Previous, onNext}) => {
+const Pagination = ({prev, next, onPrevious, onNext}) => {
     const handlePrevious = () => {
-        
+        onPrevious();
     };
 
     const handleNext = () => {
 
+        onNext();
     };
     
     
@@ -16,12 +18,14 @@ const Pagination = ({Previous, onNext}) => {
   return (
     <nav>
         <ul className='pagination justify-content-center'>
+        {prev ? (
             <li className='page-item'>
-                <button className='page-link' onClick={handlePrevious()}>Previous</button>
+                <button className='page-link' onClick={handlePrevious}>Previous</button>
 
             </li>
+            ) : null}
             <li className='page-item'>
-                <button className='page-link' onClick={handleNext()}>Next</button>
+                <button className='page-link' onClick={handleNext}>Next</button>
 
             </li>
         </ul>
