@@ -1,6 +1,5 @@
-
-
 # Getting Started with Create React App
+![Design preview for the Time tracking dashboard coding challenge](./src/imagenes/Screenshot_1.jpg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
